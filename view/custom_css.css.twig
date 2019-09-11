@@ -1,0 +1,84 @@
+{# @copyright   Copyright (C) 2010-2019 Combodo SARL #}
+{# @license     http://opensource.org/licenses/AGPL-3.0 #}
+
+#login-body {
+    background: #eee;
+    background-image: none;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    background-image: url('../env-production/itop-login-custom-css/asset/background.png');
+    background-size: 100% auto;
+    overflow: auto;
+}
+
+#login-logo, #login-content {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    margin-left: 0;
+}
+#login-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 54px;
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    top: unset;
+}
+#login-content > div:nth-child(1) {
+    margin-top: 50%;
+    margin-bottom: auto;
+}
+
+@media (max-height: 700px)
+{
+    #login-content {
+        margin-top: unset;
+        bottom: 5%;
+    }
+    #login-content > div:nth-child(1) {
+        margin-top: 5%;
+    }
+
+}
+@media (max-width: 400px)
+{
+    #login-content {
+        margin-top: 0px;
+        width: 100%;
+        min-width: 250px;
+    }
+    #login-logo
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+}
+#login-content {
+    padding: 20px;
+    background-color: #F1F4FF;
+    border: 0;
+    border-right: 2px solid #C8E1FF;
+    border-radius: 0;
+    margin-top: 0;
+    color: #37322f;
+    font-size: 12px;
+}
+
+
+h1 {
+    color: #5A67D8;
+    font-size: 16pt;
+    font-weight: normal;
+}
+a {
+    color: #805AD5;
+}
