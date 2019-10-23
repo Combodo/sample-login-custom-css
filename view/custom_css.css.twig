@@ -3,20 +3,17 @@
 
 #login-body {
     background: #eee;
-    background-image: none;
-    background-size: auto;
     margin: 0;
     padding: 0;
     height: 100%;
     position: relative;
-    background-image: url('../env-production/itop-login-custom-css/asset/background.png');
+    background: url({{ get_static_page_module_url('itop-login-custom-css', 'asset/background.png') }});
     background-size: 100% auto;
     overflow: auto;
 }
 
 #login-logo, #login-content {
     width: 400px;
-    margin-left: auto;
     margin-right: auto;
     text-align: center;
     position: absolute;
@@ -79,6 +76,7 @@ h1 {
     font-size: 16pt;
     font-weight: normal;
 }
+
 a {
     color: #805AD5;
 }
