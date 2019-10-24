@@ -25,15 +25,15 @@ class CustomCSSLoginExtension implements  iLoginUIExtension
 	 */
 	public function ListSupportedLoginModes()
 	{
-		return array('form','basic', 'external', 'url');
+		return array('form');
 	}
 
 	public function GetTwigContext()
 	{
-		$oLoginData = new LoginTwigContext();
-		$oLoginData->SetLoaderPath(utils::GetAbsoluteModulePath('itop-login-custom-css').'view');
-		$oLoginData->AddBlockExtension('css', new LoginBlockExtension('custom_css.css.twig'));
+		$oLoginContext = new LoginTwigContext();
+		$oLoginContext->SetLoaderPath(utils::GetAbsoluteModulePath('itop-login-custom-css').'view');
+		$oLoginContext->AddBlockExtension('css', new LoginBlockExtension('custom_css.css.twig'));
 
-		return $oLoginData;
+		return $oLoginContext;
 	}
 }
