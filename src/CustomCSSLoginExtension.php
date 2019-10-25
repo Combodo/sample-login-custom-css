@@ -15,7 +15,7 @@ use utils;
 /**
  * Class CustomCSSLoginExtension
  */
-class CustomCSSLoginExtension implements  iLoginUIExtension
+class CustomCSSLoginExtension implements iLoginUIExtension
 {
 
 	/**
