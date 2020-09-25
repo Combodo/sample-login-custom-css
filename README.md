@@ -6,7 +6,7 @@ This extension is a preview of what is achievable through our new login page (iT
 
 It features :
 * A custom css to customize login screen page
-* A background image that can be replaced for branding purpose
+* A background image that can be replaced for branding purpose (shipped image belongs to KDE's Plasma)
 * A responsive design for smaller devices
 
 ![Preview](docs/preview2.png)

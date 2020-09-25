@@ -31,7 +31,7 @@ class CustomCSSLoginExtension implements iLoginUIExtension
 	public function GetTwigContext()
 	{
 		$oLoginContext = new LoginTwigContext();
-		$oLoginContext->SetLoaderPath(utils::GetAbsoluteModulePath('itop-login-custom-css').'view');
+		$oLoginContext->SetLoaderPath(utils::GetAbsoluteModulePath('sample-login-custom-css').'view');
 		$oLoginContext->AddBlockExtension('css', new LoginBlockExtension('custom_css.css.twig'));
 
 		return $oLoginContext;
